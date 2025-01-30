@@ -1,21 +1,43 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>San Valentín</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="neon.css">
+    <title>Aceptar Invitación</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        .neon-button {
+            background-color: transparent;
+            border: 2px solid #00bfff;
+            color: #00bfff;
+            font-size: 1.5em;
+            padding: 20px 40px;
+            cursor: pointer;
+            margin: 20px 0;
+            transition: 0.3s;
+        }
+
+        .neon-button:hover {
+            background-color: #00bfff;
+            color: black;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <button class="neon-button" id="startButton">Start</button>
-    </div>
-
-    <script>
-        document.getElementById("startButton").addEventListener("click", function() {
-            window.location.href = "mensaje.html";
-        });
-    </script>
+    <h1>¿Aceptas mi invitación?</h1>
+    
+    <!-- Botones para aceptar o rechazar -->
+    <button class="neon-button" onclick="location.href='terminos.html'">Acepto</button>
+    <button class="neon-button" onclick="location.href='terminos.html'">No Acepto</button>
 </body>
 </html>

@@ -1,1 +1,4 @@
-
+<audio controls>
+  <source src="music/tu-musica.mp3" type="audio/mp3">
+  Tu navegador no soporta el elemento de audio.
+</audio>

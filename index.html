@@ -1,19 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aceptar Invitación</title>
+    <title>Invitación de San Valentín</title>
     <style>
         body {
             background-color: black;
             color: white;
+            font-family: Arial, sans-serif;
             text-align: center;
         }
 
         h1 {
             color: white;
+            font-size: 3em;
+            text-shadow: 0 0 5px #ff1493, 0 0 10px #ff1493;
         }
 
         .neon-button {
@@ -23,21 +25,39 @@
             font-size: 1.5em;
             padding: 20px 40px;
             cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 2px;
             margin: 20px 0;
             transition: 0.3s;
+            box-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff, 0 0 15px #00bfff;
         }
 
         .neon-button:hover {
             background-color: #00bfff;
             color: black;
         }
+
+        audio {
+            margin-top: 30px;
+            width: 80%;
+            background-color: transparent;
+        }
     </style>
 </head>
 <body>
-    <h1>¿Aceptas mi invitación?</h1>
+
+    <h1>Yo sé que en nuestra sociedad no se celebra San Valentín, pero me gustaría que la primera vez que celebre este día sea contigo. Un abrazo.</h1>
+
+    <!-- Botón para continuar -->
+    <button class="neon-button" onclick="location.href='pagina2.html'">Continuar</button>
+
+    <h2>Escucha nuestra canción especial</h2>
     
-    <!-- Botones para aceptar o rechazar -->
-    <button class="neon-button" onclick="location.href='terminos.html'">Acepto</button>
-    <button class="neon-button" onclick="location.href='terminos.html'">No Acepto</button>
+    <!-- Reproductor de música -->
+    <audio controls>
+        <source src="music/tu-musica.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
 </body>
 </html>
